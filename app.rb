@@ -61,7 +61,6 @@ end
 #create blogs
 
 get "/blogs/new" do
-  @current_user = User.find(session[:user_id])
   erb :"blogs/new"
 end
 
