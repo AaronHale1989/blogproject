@@ -61,7 +61,6 @@ end
 #create blogs
 
 get "/blogs/new" do
-  @current_user = User.find(session[:user_id])
   erb :"blogs/new"
 end
 
@@ -73,4 +72,30 @@ post "/create_blog" do
   Blog.create(title: params[:title],content: params[:content],user_id: user.id)
   redirect "/blogs"
   end
+end
+
+get "/users/edit" do
+  if !session[:user_id]
+    redirect "/login"
+  else
+  @user = User.find(session[:user_id])
+  erb :"users/edit"
+  end
+end
+
+post "/edit_user" do
+  @user = User.find(session[:user_id])
+  @user.update(username: params[:username],password: params[:password])
+  redirect "/"
+end
+
+post "/destroy_user" do
+  @user = User.find(session[:user_id])
+  @user.destroy
+  redirect "/signup"
+end
+
+get "/users/profile/:id" do
+  @user = User.find(params[:id])
+  erb :"users/profile"
 end
