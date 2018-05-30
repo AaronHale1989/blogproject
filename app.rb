@@ -91,6 +91,7 @@ end
 
 post "/destroy_user" do
   @user = User.find(session[:user_id])
+  session[:user_id] = nil
   @user.destroy
   redirect "/signup"
 end
@@ -99,6 +100,7 @@ get "/user_profile/:id" do
   @user = User.find(params[:id])
   erb :"users/profile"
 end
+
 get "/blogs_recent" do
   @blogs = Blog.all
   erb :"blogs/recent"
