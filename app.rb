@@ -94,3 +94,8 @@ post "/destroy_user" do
   @user.destroy
   redirect "/signup"
 end
+
+get "/blogs/recent" do
+  @blogs = Blog.all
+  erb :"blogs/recent"
+end
