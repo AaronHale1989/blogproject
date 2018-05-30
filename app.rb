@@ -105,13 +105,3 @@ get "/blogs/recent" do
   @blogs = Blog.all
   erb :"blogs/recent"
 end
-
-get "/users/profile/:id" do
-  @user = User.find(params[:id])
-  erb :"users/profile"
-  end
-
-get "/blogs/recent" do
-  @blogs = Blog.all
-  erb :"blogs/recent"
-end
