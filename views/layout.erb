@@ -11,14 +11,14 @@
       <li><a href="/">Home</a></li>
       <li><a href="/login">Login</a></li>
       <li><a href="/signup">Create User</a></li>
-      <li> <a href="/users/edit">Edit User</a> </li>
+      <li> <a href="/edit_user">Edit User</a> </li>
 
 
 
 
     <div>
       <% if current_user %>
-        <li><a href="/blogs/new">Post Blog</a></li>
+        <li><a href="/new_blog">Post Blog</a></li>
       </ul>
 
       Logged In As: <%= current_user.username %>

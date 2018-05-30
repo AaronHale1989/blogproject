@@ -60,7 +60,7 @@ end
 
 #create blogs
 
-get "/blogs/new" do
+get "/new_blog" do
   erb :"blogs/new"
 end
 
@@ -74,12 +74,12 @@ post "/create_blog" do
   end
 end
 
-get "/users/edit" do
+get "/edit_user" do
   if !session[:user_id]
     redirect "/login"
   else
   @user = User.find(session[:user_id])
-  erb :"users/edit", :layout => :layout
+  erb :"users/edit"
   end
 end
 
@@ -95,12 +95,10 @@ post "/destroy_user" do
   redirect "/signup"
 end
 
-
 get "/users/profile/:id" do
   @user = User.find(params[:id])
   erb :"users/profile"
-  end
-
+end
 get "/blogs/recent" do
   @blogs = Blog.all
   erb :"blogs/recent"
