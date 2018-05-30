@@ -95,7 +95,13 @@ post "/destroy_user" do
   redirect "/signup"
 end
 
+<<<<<<< HEAD
 get "/users/profile/:id" do
   @user = User.find(params[:id])
   erb :"users/profile"
+=======
+get "/blogs/recent" do
+  @blogs = Blog.all
+  erb :"blogs/recent"
+>>>>>>> b281c139244321640a2049a471b5e78a2b671339
 end
