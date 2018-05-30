@@ -68,6 +68,12 @@ body {
   background-size :cover;
   color:white;
 }
+.recent {
+  margin:10px;
+  width:150px;
+  border-bottom:1px solid white;
+  display:block;
+}
 
 .box{
   position:relative;
