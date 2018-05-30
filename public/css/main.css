@@ -1,0 +1,47 @@
+.current_user{
+  width:100px;
+  background-color: red;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-decoration: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    list-style-type: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color:  tomato;
+}
+
+#logout{
+  float:right;
+  position:relative;
+  top:23px;
+  right:7px;
+}
+
+input[type=submit] {
+    color: #fff;
+    background: #333;
+    border-radius: 3px;
+}
+input[type=submit]:hover {
+    background: #f44c0e;
+}
