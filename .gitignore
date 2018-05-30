@@ -2,4 +2,8 @@ public/css/.sass-cache
 public/css/main.css.map
 public/css/main.css
 public/.DS_Store
+<<<<<<< HEAD
 whatever.sqlite3
+=======
+whatever.sq3lite
+>>>>>>> 0b1195bd21e232a17845e579f6d2e03769766f70
