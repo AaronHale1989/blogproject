@@ -1,3 +1,9 @@
+*{
+  margin: 0 auto;
+  padding:0;
+}
+
+
 .current_user{
   width:100px;
   background-color: red;
@@ -8,7 +14,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
     text-decoration: none;
 }
 
@@ -19,15 +25,21 @@ li {
 li a {
     list-style-type: none;
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    font-size:16px;
+    color:#FFF;
+     transition: all 0.3s ease-in;
+     text-decoration:none;
 
 }
 
 li a:hover {
-    background-color:  tomato;
+    background-color:  red;
+    -webkit-stroke-width: 5.3px;
+     -webkit-stroke-color: #FFFFFF;
+     -webkit-fill-color: #FFFFFF;
+     text-shadow: 1px 0px 20px yellow;
 }
 
 #logout{
@@ -44,4 +56,27 @@ input[type=submit] {
 }
 input[type=submit]:hover {
     background: #f44c0e;
+}
+
+textarea:focus, input:focus {
+	border: 2px solid tomato;
+}
+
+body {
+  font-family: sedgwick ave display;
+  background-image:url("spaceyang.jpeg");
+  background-size :cover;
+  color:white;
+}
+
+.box{
+  position:relative;
+  top:40px;
+  height:1000px;
+  width:100%;
+}
+
+#logtitle {
+  position:relative;
+  top: 30px;
 }
