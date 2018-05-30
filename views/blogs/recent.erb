@@ -2,7 +2,7 @@
 
 <div class="box">
 <% @blogs.limit(10).each do |b| %>
-<div>Title: <%= b.title %></div>
-<div>Content: <%= b.content %></div><hr>
+<div class="recent">Title: <%= b.title %>
+Content: <%= b.content %></div>
 <% end %>
 </div>
