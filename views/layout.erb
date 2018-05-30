@@ -6,15 +6,15 @@
     <title></title>
   </head>
   <body>
-    <nav>
+    <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/login">Login</a></li>
       <li><a href="/signup">Create User</a></li>
       <li> <a href="/users/edit">Edit User</a> </li>
         <form  action="/logout" method="post">
-        <input type="submit" value="Logout">
+        <input id="logout" type="submit" value="Logout">
       </form>
-    </nav>
+    </ul>
     <div>
       <% if current_user %>
         <%= current_user.username %>
