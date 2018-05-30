@@ -79,7 +79,7 @@ get "/users/edit" do
     redirect "/login"
   else
   @user = User.find(session[:user_id])
-  erb :"users/edit"
+  erb :"users/edit", :layout => :layout
   end
 end
 

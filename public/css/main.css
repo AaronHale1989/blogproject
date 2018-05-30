@@ -45,3 +45,6 @@ input[type=submit] {
 input[type=submit]:hover {
     background: #f44c0e;
 }
+body{
+  font-family: Sedgwick Ave Display;
+}
