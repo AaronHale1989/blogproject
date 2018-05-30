@@ -1,5 +1,7 @@
 <h3>List of Users</h3>
 
+<div class="box">
 <% @users.each_with_index do |u,index| %>
 <div><%= index + 1%> <a href="/users/profile/<%= u.id %>"><%= u.username %></a></div>
 <% end %>
+</div>
