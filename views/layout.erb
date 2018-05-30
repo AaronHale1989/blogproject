@@ -13,18 +13,13 @@
       <li> <a href="/users/edit">Edit User</a> </li>
 
 
-
-
-        <form  action="/logout" method="post">
-        <input id="logout" type="submit" value="Logout">
-      </form>
     </ul>
 
     <div>
       <% if current_user %>
         <%= current_user.username %>
         <form  action="/logout" method="post">
-        <input type="submit" value="Logout">
+        <input id="logout" type="submit" value="Logout">
       </form>
       <a href="/blogs/new">post blog</a>
 

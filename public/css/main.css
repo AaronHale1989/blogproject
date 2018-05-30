@@ -33,7 +33,7 @@ li a:hover {
 #logout{
   float:right;
   position:relative;
-  top:23px;
+  bottom: 40px;
   right:7px;
 }
 

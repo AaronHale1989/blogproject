@@ -1,7 +1,7 @@
 <h3>Profile Page</h3>
 <%= @user.username %>'s blogs
-
+<hr>
  <% @user.blogs.each do |b| %>
- <%= b.title %>
- <%= b.content %>
+ Title:<%= b.title %><br>
+ Content: <%= b.content %>
  <% end %>
