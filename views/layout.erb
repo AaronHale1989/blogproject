@@ -11,13 +11,22 @@
       <li><a href="/login">Login</a></li>
       <li><a href="/signup">Create User</a></li>
       <li> <a href="/users/edit">Edit User</a> </li>
+
         <form  action="/logout" method="post">
         <input id="logout" type="submit" value="Logout">
       </form>
     </ul>
+
     <div>
       <% if current_user %>
         <%= current_user.username %>
+        <form  action="/logout" method="post">
+        <input type="submit" value="Logout">
+      </form>
+      <a href="/blogs/new">post blog</a>
+
+      <% else %>
+      <a href="/login">sign in</a>
         <% end %>
     </div>
 
