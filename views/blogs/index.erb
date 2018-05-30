@@ -1,5 +1,6 @@
 <h3>List of Blogs</h3>
 
+<div class="box">
 <% @blogs.each do |b| %>
 
   <div><%= b.title %></div>
@@ -8,3 +9,4 @@
   <div><%= User.find(id).username %>
   <hr>
 <% end %>
+</div>

@@ -1,5 +1,7 @@
 <h3>Most Recent Posts</h3>
 
+<div class="box">
 <% @blogs.limit(10).each do |b| %>
 <div>Title: <%= b.title %></div>
 <% end %>
+</div>
