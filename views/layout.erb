@@ -13,18 +13,20 @@
       <li> <a href="/users/edit">Edit User</a> </li>
 
 
-    </ul>
+
 
     <div>
       <% if current_user %>
-        <%= current_user.username %>
-        <form  action="/logout" method="post">
+        <li><a href="/blogs/new">Post Blog</a></li>
+      </ul>
+
+      Logged In As: <%= current_user.username %>
+
+      <form  action="/logout" method="post">
         <input id="logout" type="submit" value="Logout">
       </form>
-      <a href="/blogs/new">post blog</a>
-
       <% else %>
-      <a href="/login">sign in</a>
+    </ul>
         <% end %>
     </div>
 
